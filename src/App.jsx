@@ -1,3 +1,4 @@
+import React from 'react';
 import NavBar from './components/NavBar';
 
 function App() {
@@ -5,7 +6,7 @@ function App() {
     <div>
       <NavBar />
       <h1 className="text-3xl font-bold underline">
-      Hello world!
+        Hello world!
       </h1>
     </div>
   );
