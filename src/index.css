@@ -4,6 +4,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap');
 
+@layer base {
+  body {
+    @apply bg-soapstone dark:bg-county-green;
+  }
+  li {
+    @apply cursor-pointer;
+  }
+}
+
 body {
   margin: 0;
   font-family: 'Source Code Pro', monospace;
