@@ -1,7 +1,10 @@
+import NavBar from './components/NavBar';
+
 function App() {
   return (
-    <div className='bg-black'>
-      <h1 className="text-3xl font-bold underline bg">
+    <div>
+      <NavBar />
+      <h1 className="text-3xl font-bold underline">
       Hello world!
       </h1>
     </div>
