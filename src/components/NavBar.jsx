@@ -2,6 +2,10 @@
 import { Icon } from '@iconify/react';
 import React, { useState } from 'react';
 
+// TODO: use react scroll for links
+// TODO: add animation to theme toggle
+// TODO: make sure nav menu relative to navbar
+
 function NavBar() {
   const [nav, setNav] = useState(false);
   const toggleNav = () => setNav((prevNav) => !prevNav);
@@ -36,22 +40,22 @@ function NavBar() {
   };
 
   return (
-    <header className="fixed top-0 left-0 flex justify-between bg-gradient-to-b from-soapstone dark:from-county-green w-full">
+    <header className="fixed top-0 left-0 flex justify-between bg-gradient-to-b transition-colors from-soapstone dark:from-county-green w-full">
       <p className="block p-4">
-        mhasbi
-        <br />
-        saputra
+        mhasbisaputra
       </p>
       <div className="flex flex-shrink-0">
-        <button type="button" className="min-w-44px" onClick={toggleTheme}>
-          <Icon
-            className="m-auto"
-            icon={
-              oppositeTheme === 'light'
-                ? 'clarity:sun-line'
-                : 'clarity:moon-line'
-            }
-          />
+        <button type="button" className="min-w-44px min-h-44px" onClick={toggleTheme}>
+          <div className="relative w-full">
+            <Icon
+              className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-opacity duration-500 ${oppositeTheme === 'dark' ? 'opacity-100' : 'opacity-0 not-sr-only'}`}
+              icon="clarity:moon-line"
+            />
+            <Icon
+              className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-opacity duration-500 ${oppositeTheme === 'light' ? 'opacity-100' : 'opacity-0 not-sr-only'}`}
+              icon="clarity:sun-line"
+            />
+          </div>
         </button>
         <button
           type="button"
