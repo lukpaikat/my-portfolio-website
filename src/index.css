@@ -8,6 +8,7 @@
   body {
     @apply bg-soapstone dark:bg-county-green;
     @apply  text-county-green dark:text-soapstone;
+    @apply transition-colors;
   }
   li {
     @apply cursor-pointer;
