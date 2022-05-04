@@ -3,7 +3,6 @@ import { Icon } from '@iconify/react';
 import React, { useState } from 'react';
 
 // TODO: use react scroll for links
-// TODO: add animation to theme toggle
 // TODO: make sure nav menu relative to navbar
 
 function NavBar() {
@@ -22,7 +21,7 @@ function NavBar() {
   const navElements = navItems.map(([title, url, key]) => (
     <li key={key}>
       <a
-        className="text-center min-h-44px min-w-44px block p-4 md:text-base"
+        className="relative text-center min-h-44px min-w-44px block p-4 md:text-base"
         href={url}
       >
         {title}
@@ -72,7 +71,7 @@ function NavBar() {
           <ul
             className={
               nav
-                ? 'absolute md:static bg-soapstone dark:bg-county-green md:bg-transparent right-0 md:right-auto top-0 md:top-auto w-full max-w-xs md:w-auto md:max-w-0 h-fit md:h-auto md:min-h-0 flex flex-col md:flex-row md:justify-stretch items-start shadow-md md:shadow-none pt-3'
+                ? 'absolute md:static bg-soapstone dark:bg-county-green md:bg-transparent right-0 md:right-auto top-0 md:top-auto w-full max-w-xs md:w-auto md:max-w-none h-fit md:h-auto md:min-h-0 flex flex-col md:flex-row md:justify-stretch items-start shadow-md md:shadow-none pt-3 md:pt-0'
                 : 'hidden md:flex items-center'
             }
           >
