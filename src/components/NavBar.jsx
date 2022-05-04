@@ -5,6 +5,13 @@ import React, { useState } from 'react';
 // TODO: use react scroll for links
 // TODO: make sure nav menu relative to navbar
 
+// before for navElements
+/* before:transition-all before:-z-10 before:absolute
+  before:bg-salmon before:top-1/2 before:-translate-y-1/2
+ before:left-1/2 before:-translate-x-1/2 before:h-0
+ before:hover:h-3/4 before:w-0 before:hover:w-1/2
+*/
+
 function NavBar() {
   const [nav, setNav] = useState(false);
   const toggleNav = () => setNav((prevNav) => !prevNav);
@@ -21,7 +28,9 @@ function NavBar() {
   const navElements = navItems.map(([title, url, key]) => (
     <li key={key}>
       <a
-        className="relative text-center min-h-44px min-w-44px block p-4 md:text-base"
+        className="relative z-10 md:text-center min-h-44px min-w-44px w-60 md:w-auto block p-4 md:text-base transition-all
+          border-2 border-transparent hover:border-county-green hover:dark:border-soapstone
+          after:transition-all after:absolute after:h-0.5 after:dark:bg-soapstone after:bg-county-green after:bottom-3 after:left-4 md:after:left-1/2 md:after:-translate-x-1/2 hover:after:w-1/3 after:w-0"
         href={url}
       >
         {title}
@@ -44,14 +53,19 @@ function NavBar() {
         mhasbisaputra
       </p>
       <div className="flex flex-shrink-0">
-        <button type="button" className="min-w-44px min-h-44px" onClick={toggleTheme}>
+        <button
+          aria-label="toggle dark mode"
+          type="button"
+          className="transition-colors min-w-44px min-h-44px hover:bg-county-green dark:hover:bg-soapstone dark:hover:text-county-green hover:text-soapstone"
+          onClick={toggleTheme}
+        >
           <div className="relative w-full">
             <Icon
-              className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-opacity duration-500 ${oppositeTheme === 'dark' ? 'opacity-100' : 'opacity-0 not-sr-only'}`}
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-opacity duration-500 opacity-100 dark:opacity-0"
               icon="clarity:moon-line"
             />
             <Icon
-              className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-opacity duration-500 ${oppositeTheme === 'light' ? 'opacity-100' : 'opacity-0 not-sr-only'}`}
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-opacity duration-500 opacity-0 dark:opacity-100"
               icon="clarity:sun-line"
             />
           </div>
@@ -71,7 +85,7 @@ function NavBar() {
           <ul
             className={
               nav
-                ? 'absolute md:static bg-soapstone dark:bg-county-green md:bg-transparent right-0 md:right-auto top-0 md:top-auto w-full max-w-xs md:w-auto md:max-w-none h-fit md:h-auto md:min-h-0 flex flex-col md:flex-row md:justify-stretch items-start shadow-md md:shadow-none pt-3 md:pt-0'
+                ? 'absolute md:static bg-soapstone dark:bg-county-green md:bg-transparent right-0 md:right-auto top-0 md:top-auto w-full max-w-xs md:w-auto md:max-w-none h-fit md:h-auto md:min-h-0 flex flex-col md:flex-row md:justify-stretch items-start shadow-md md:shadow-none'
                 : 'hidden md:flex items-center'
             }
           >
