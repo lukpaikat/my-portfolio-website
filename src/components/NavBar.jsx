@@ -18,7 +18,7 @@ function NavBar() {
   const navElements = navItems.map(([title, url, key]) => (
     <li key={key}>
       <a
-        className="text-center min-h-44px min-w-44px block p-4 text-4xl md:text-base"
+        className="text-center min-h-44px min-w-44px block p-4 md:text-base"
         href={url}
       >
         {title}
@@ -37,29 +37,46 @@ function NavBar() {
 
   // navbar here
   return (
-    <header className="flex justify-between bg-gradient-to-b from-soapstone dark:from-county-green">
-      <p className="block p-4">mhasbisaputra</p>
-      <nav className="flex">
-        <button type="button" onClick={toggleTheme}>
-          <Icon icon={oppositeTheme === 'light' ? 'clarity:sun-line' : 'clarity:moon-line'} />
+    <header className="fixed flex justify-between bg-gradient-to-b from-soapstone dark:from-county-green w-full">
+      <p className="block p-4">
+        mhasbi
+        <br />
+        saputra
+      </p>
+      <div className="flex flex-shrink-0">
+        <button type="button" className="min-w-44px" onClick={toggleTheme}>
+          <Icon
+            className="m-auto"
+            icon={
+              oppositeTheme === 'light'
+                ? 'clarity:sun-line'
+                : 'clarity:moon-line'
+            }
+          />
         </button>
         <button
           type="button"
           onClick={toggleNav}
           className="p-4 relative md:hidden z-10"
         >
-          {nav ? 'Close' : 'Menu'}
+          {nav ? (
+            <Icon icon="clarity:menu-line" />
+          ) : (
+            <Icon icon="clarity:menu-line" />
+          )}
         </button>
-        <ul
-          className={
-            nav
-              ? 'absolute md:static bg-soapstone md:bg-transparent left-0 md:left-auto top-0 md:top-auto w-full md:w-auto h-screen md:h-auto min-h-410px md:min-h-0 flex flex-col md:flex-row justify-center md:justify-stretch items-center'
-              : 'hidden md:flex items-center'
-          }
-        >
-          {navElements}
-        </ul>
-      </nav>
+        <nav className={nav ? 'flex align-middle' : 'hidden md:flex align-middle'}>
+          <ul
+            className={
+              nav
+                ? 'absolute md:static bg-soapstone dark:bg-county-green md:bg-transparent right-0 md:right-auto top-0 md:top-auto w-full max-w-xs md:w-auto md:max-w-0 h-fit md:h-auto md:min-h-0 flex flex-col md:flex-row md:justify-stretch items-start shadow-md md:shadow-none'
+                : 'hidden md:flex items-center'
+            }
+          >
+            {navElements}
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 }
