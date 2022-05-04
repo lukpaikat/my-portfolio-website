@@ -35,9 +35,8 @@ function NavBar() {
     }
   };
 
-  // navbar here
   return (
-    <header className="fixed flex justify-between bg-gradient-to-b from-soapstone dark:from-county-green w-full">
+    <header className="fixed top-0 left-0 flex justify-between bg-gradient-to-b from-soapstone dark:from-county-green w-full">
       <p className="block p-4">
         mhasbi
         <br />
