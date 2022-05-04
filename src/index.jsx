@@ -9,13 +9,12 @@ if (
   || (!('theme' in localStorage)
     && window.matchMedia('(prefers-color-scheme:dark)').matches)
 ) {
+  localStorage.setItem('theme', 'dark');
   document.documentElement.classList.add('dark');
 } else {
+  localStorage.setItem('theme', 'light');
   document.documentElement.classList.remove('dark');
 }
-
-// NOTE: remove later
-localStorage.theme = 'light';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
