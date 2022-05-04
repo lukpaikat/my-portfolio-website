@@ -1,3 +1,5 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { Icon } from '@iconify/react';
 import React, { useState } from 'react';
 
 function NavBar() {
@@ -39,7 +41,7 @@ function NavBar() {
       <p className="block p-4">mhasbisaputra</p>
       <nav className="flex">
         <button type="button" onClick={toggleTheme}>
-          {oppositeTheme}
+          <Icon icon={oppositeTheme === 'light' ? 'clarity:sun-line' : 'clarity:moon-line'} />
         </button>
         <button
           type="button"
