@@ -8,6 +8,7 @@ module.exports = {
         'county-green': '#093523',
         'bright-red': '#EA0801',
         soapstone: '#FDFDFD',
+        salmon: '#F3837F',
       },
       minWidth: {
         '44px': '44px',
