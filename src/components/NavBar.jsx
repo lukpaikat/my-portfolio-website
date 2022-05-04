@@ -59,7 +59,7 @@ function NavBar() {
           className="p-4 relative md:hidden z-10"
         >
           {nav ? (
-            <Icon icon="clarity:menu-line" />
+            <Icon icon="clarity:close-line" />
           ) : (
             <Icon icon="clarity:menu-line" />
           )}
@@ -68,7 +68,7 @@ function NavBar() {
           <ul
             className={
               nav
-                ? 'absolute md:static bg-soapstone dark:bg-county-green md:bg-transparent right-0 md:right-auto top-0 md:top-auto w-full max-w-xs md:w-auto md:max-w-0 h-fit md:h-auto md:min-h-0 flex flex-col md:flex-row md:justify-stretch items-start shadow-md md:shadow-none'
+                ? 'absolute md:static bg-soapstone dark:bg-county-green md:bg-transparent right-0 md:right-auto top-0 md:top-auto w-full max-w-xs md:w-auto md:max-w-0 h-fit md:h-auto md:min-h-0 flex flex-col md:flex-row md:justify-stretch items-start shadow-md md:shadow-none pt-3'
                 : 'hidden md:flex items-center'
             }
           >
