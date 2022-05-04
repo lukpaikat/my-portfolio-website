@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 function NavBar() {
   const [nav, setNav] = useState(false);
   const toggleNav = () => setNav((prevNav) => !prevNav);
+  const [theme, setTheme] = useState(localStorage.theme);
+  const oppositeTheme = theme === 'dark' ? 'light' : 'dark';
 
   const navItems = [
     ['Home', '/', 'nav1'],
@@ -21,12 +23,24 @@ function NavBar() {
       </a>
     </li>
   ));
+  const toggleTheme = () => {
+    setTheme(oppositeTheme);
+    localStorage.setItem('theme', oppositeTheme);
+    if (oppositeTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  };
 
   // navbar here
   return (
     <header className="flex justify-between bg-gradient-to-b from-soapstone dark:from-county-green">
       <p className="block p-4">mhasbisaputra</p>
-      <nav>
+      <nav className="flex">
+        <button type="button" onClick={toggleTheme}>
+          {oppositeTheme}
+        </button>
         <button
           type="button"
           onClick={toggleNav}
@@ -37,7 +51,7 @@ function NavBar() {
         <ul
           className={
             nav
-              ? 'absolute md:static bg-soapstone md:bg-none left-0 md:left-auto top-0 md:top-auto w-full md:w-auto h-screen md:h-auto min-h-410px md:min-h-0 flex flex-col md:flex-row justify-center md:justify-stretch items-center'
+              ? 'absolute md:static bg-soapstone md:bg-transparent left-0 md:left-auto top-0 md:top-auto w-full md:w-auto h-screen md:h-auto min-h-410px md:min-h-0 flex flex-col md:flex-row justify-center md:justify-stretch items-center'
               : 'hidden md:flex items-center'
           }
         >
