@@ -1,13 +1,12 @@
 import React from 'react';
+import Hero from './components/Hero';
 import NavBar from './components/NavBar';
 // tambah skip to content
 function App() {
   return (
     <div>
       <NavBar />
-      <h1 id="hero" className="mt-20 text-3xl font-bold underline h-screen">
-        Hello world!
-      </h1>
+      <Hero />
       <h1 id="about" className="mt-20 text-3xl font-bold underline h-screen">
         Hello world!
       </h1>
