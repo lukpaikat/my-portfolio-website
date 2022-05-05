@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 
 // TODO: use react scroll for links
 // TODO: make sure nav menu relative to navbar
+// TODO: what happen to the nav state after a nav link clicked
 
 // before for navElements
 /* before:transition-all before:-z-10 before:absolute
@@ -62,11 +63,11 @@ function NavBar() {
         >
           <div className="relative w-full">
             <Icon
-              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-opacity duration-500 opacity-100 dark:opacity-0"
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all opacity-100 rotate-0 dark:opacity-0 dark:rotate-180"
               icon="clarity:moon-line"
             />
             <Icon
-              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-opacity duration-500 opacity-0 dark:opacity-100"
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all opacity-0 rotate-180 dark:opacity-100 dark:rotate-0"
               icon="clarity:sun-line"
             />
           </div>
@@ -82,15 +83,14 @@ function NavBar() {
             <Icon icon="clarity:menu-line" />
           )}
         </button>
-        <nav className={nav ? 'flex align-middle' : 'hidden md:flex align-middle'}>
+        {/* nav ? 'flex align-middle' : 'hidden md:flex align-middle' */}
+        <nav className={`flex align-middle ${nav ? '' : 'hidden md:flex'}`}>
           <ul
-            className={`absolute md:static 
-            bg-soapstone dark:bg-county-green md:bg-transparent 
-            right-0 md:right-auto top-0 md:top-auto 
-            w-full max-w-xs md:w-auto md:max-w-none h-fit md:h-auto md:min-h-0 
-            flex flex-col md:flex-row md:justify-stretch items-start md:items-center shadow-md md:shadow-none
-            ${nav ? '' : 'hidden md:flex'}
-            `}
+            className="absolute md:static
+            bg-soapstone dark:bg-county-green md:bg-transparent
+            right-0 md:right-auto top-0 md:top-auto
+            w-full max-w-xs md:w-auto md:max-w-none h-fit md:h-auto md:min-h-0
+            flex flex-col md:flex-row md:justify-stretch items-start md:items-center shadow-md md:shadow-none"
           >
             {navElements}
           </ul>
