@@ -30,7 +30,8 @@ function NavBar() {
       <a
         className="relative z-10 md:text-center min-h-44px min-w-44px w-60 md:w-auto block p-4 md:text-base transition-all
           border-2 border-transparent hover:border-county-green hover:dark:border-soapstone
-          after:transition-all after:absolute after:h-0.5 after:dark:bg-soapstone after:bg-county-green after:bottom-3 after:left-4 md:after:left-1/2 md:after:-translate-x-1/2 hover:after:w-1/3 after:w-0"
+          after:transition-all after:absolute after:h-0.5 after:dark:bg-soapstone after:bg-county-green
+          after:bottom-3 after:left-4 md:after:left-1/2 md:after:-translate-x-1/2 hover:after:w-1/6 md:hover:after:w-1/2 after:w-0"
         href={url}
       >
         {title}
@@ -83,11 +84,13 @@ function NavBar() {
         </button>
         <nav className={nav ? 'flex align-middle' : 'hidden md:flex align-middle'}>
           <ul
-            className={
-              nav
-                ? 'absolute md:static bg-soapstone dark:bg-county-green md:bg-transparent right-0 md:right-auto top-0 md:top-auto w-full max-w-xs md:w-auto md:max-w-none h-fit md:h-auto md:min-h-0 flex flex-col md:flex-row md:justify-stretch items-start shadow-md md:shadow-none'
-                : 'hidden md:flex items-center'
-            }
+            className={`absolute md:static 
+            bg-soapstone dark:bg-county-green md:bg-transparent 
+            right-0 md:right-auto top-0 md:top-auto 
+            w-full max-w-xs md:w-auto md:max-w-none h-fit md:h-auto md:min-h-0 
+            flex flex-col md:flex-row md:justify-stretch items-start md:items-center shadow-md md:shadow-none
+            ${nav ? '' : 'hidden md:flex'}
+            `}
           >
             {navElements}
           </ul>
