@@ -1,6 +1,6 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Icon } from '@iconify/react';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 
 // before for navElements
@@ -15,9 +15,6 @@ function NavBar() {
   const [theme, setTheme] = useState(localStorage.theme);
   const oppositeTheme = theme === 'dark' ? 'light' : 'dark';
 
-  useEffect(() => {
-    console.log(nav);
-  }, [nav]);
   const toggleNav = () => setNav((prevNav) => !prevNav);
 
   const navItems = [
