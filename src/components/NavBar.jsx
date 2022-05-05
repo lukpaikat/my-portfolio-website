@@ -1,10 +1,7 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Icon } from '@iconify/react';
-import React, { useState } from 'react';
-
-// TODO: use react scroll for links
-// TODO: make sure nav menu relative to navbar
-// TODO: what happen to the nav state after a nav link clicked
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-scroll';
 
 // before for navElements
 /* before:transition-all before:-z-10 before:absolute
@@ -15,28 +12,38 @@ import React, { useState } from 'react';
 
 function NavBar() {
   const [nav, setNav] = useState(false);
-  const toggleNav = () => setNav((prevNav) => !prevNav);
   const [theme, setTheme] = useState(localStorage.theme);
   const oppositeTheme = theme === 'dark' ? 'light' : 'dark';
 
+  useEffect(() => {
+    console.log(nav);
+  }, [nav]);
+  const toggleNav = () => setNav((prevNav) => !prevNav);
+
   const navItems = [
-    ['Home', '/', 'nav1'],
-    ['About', '/', 'nav2'],
-    ['Skills', '/', 'nav3'],
-    ['Work', '/', 'nav4'],
-    ['Contact', '/', 'nav5'],
+    ['Home', 'hero', 'nav1'],
+    ['About', 'about', 'nav2'],
+    ['Skills', 'skills', 'nav3'],
+    ['Work', 'work', 'nav4'],
+    ['Contact', 'contact', 'nav5'],
   ];
   const navElements = navItems.map(([title, url, key]) => (
     <li key={key}>
-      <a
+      <Link
+        spy
+        activeClass="after:w-1/6 md:after:w-1/2"
         className="relative z-10 md:text-center min-h-44px min-w-44px w-60 md:w-auto block p-4 md:text-base transition-all
           border-2 border-transparent hover:border-county-green hover:dark:border-soapstone
           after:transition-all after:absolute after:h-0.5 after:dark:bg-soapstone after:bg-county-green
           after:bottom-3 after:left-4 md:after:left-1/2 md:after:-translate-x-1/2 hover:after:w-1/6 md:hover:after:w-1/2 after:w-0"
-        href={url}
+        to={url}
+        smooth
+        duration={500}
+        offset={-200}
+        onClick={() => { if (nav) { toggleNav(); } }}
       >
         {title}
-      </a>
+      </Link>
     </li>
   ));
   const toggleTheme = () => {
