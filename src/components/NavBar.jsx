@@ -73,7 +73,7 @@ function NavBar() {
         <button
           type="button"
           onClick={toggleNav}
-          className="p-4 relative md:hidden z-10"
+          className="p-4 relative md:hidden z-10 transition-colors min-w-44px min-h-44px hover:bg-county-green dark:hover:bg-soapstone dark:hover:text-county-green hover:text-soapstone"
         >
           {nav ? (
             <Icon icon="clarity:close-line" />
