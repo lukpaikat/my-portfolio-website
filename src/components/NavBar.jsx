@@ -68,11 +68,11 @@ function NavBar() {
           <div className="relative w-full">
             <Icon
               className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all opacity-100 rotate-0 dark:opacity-0 dark:rotate-180"
-              icon="clarity:moon-line"
+              icon="clarity:moon-solid"
             />
             <Icon
               className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all opacity-0 rotate-180 dark:opacity-100 dark:rotate-0"
-              icon="clarity:sun-line"
+              icon="clarity:sun-solid"
             />
           </div>
         </button>
