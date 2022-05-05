@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react';
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 
-// before for navElements
+// alternative before for navElements
 /* before:transition-all before:-z-10 before:absolute
   before:bg-salmon before:top-1/2 before:-translate-y-1/2
  before:left-1/2 before:-translate-x-1/2 before:h-0
