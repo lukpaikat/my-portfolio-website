@@ -28,7 +28,7 @@ function NavBar() {
     <li key={key}>
       <Link
         spy
-        activeClass="after:w-1/6 md:after:w-1/2"
+        activeClass="after:w-1/5 md:after:w-1/2"
         className="relative z-10 md:text-center min-h-44px min-w-44px w-60 md:w-auto block p-4 md:text-base transition-all
           border-2 border-transparent hover:border-county-green hover:dark:border-soapstone
           after:transition-all after:absolute after:h-0.5 after:dark:bg-soapstone after:bg-county-green
@@ -93,8 +93,8 @@ function NavBar() {
             className="absolute md:static
             bg-soapstone dark:bg-county-green md:bg-transparent
             right-0 md:right-auto top-0 md:top-auto
-            w-full max-w-xs md:w-auto md:max-w-none h-fit md:h-auto md:min-h-0
-            flex flex-col md:flex-row md:justify-stretch items-start md:items-center shadow-md md:shadow-none"
+            w-full max-w-xs md:w-auto md:max-w-none h-[min(320px,_100vh)] md:h-auto md:min-h-0
+            flex flex-col md:flex-row md:justify-stretch items-start md:items-center shadow-md md:shadow-none overflow-y-scroll"
           >
             {navElements}
           </ul>
