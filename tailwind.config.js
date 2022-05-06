@@ -9,6 +9,7 @@ module.exports = {
         'bright-red': '#EA0801',
         soapstone: '#FDFDFD',
         salmon: '#F3837F',
+        'spanish-green': '#839990',
       },
       minWidth: {
         '44px': '44px',
