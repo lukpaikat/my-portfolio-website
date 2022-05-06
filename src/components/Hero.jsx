@@ -36,7 +36,7 @@ function Hero() {
           smooth
           duration={500}
           offset={-200}
-          className="bg-bright-red text-soapstone block w-fit
+          className="bg-county-green text-soapstone dark:bg-soapstone dark:text-county-green block w-fit
             min-h-44px min-w-44px py-3 px-4 mx-2 my-2 cursor-pointer"
         >
           My Work
