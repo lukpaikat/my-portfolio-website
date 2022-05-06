@@ -16,11 +16,11 @@ function Hero() {
     >
       <div
         className="col-start-1 col-end-2 row-span-full
-          border-r-2 border-dashed border-r-spanish-green"
+          border-r border-dashed border-r-spanish-green"
       />
       <div
         className="col-start-2 col-end-3 row-start-1 row-end-2
-        border-b-2 border-dashed mt-auto pr-2 border-b-spanish-green"
+        border-b border-dashed mt-auto pr-2 border-b-spanish-green"
       >
         <p className="ml-2 text-xl">Hi, my name is</p>
         <h1 className="text-4xl my-4 ml-2">
