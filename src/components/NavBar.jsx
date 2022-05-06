@@ -18,13 +18,13 @@ function NavBar() {
   const toggleNav = () => setNav((prevNav) => !prevNav);
 
   const navItems = [
-    ['Home', 'hero', 'nav1'],
-    ['About', 'about', 'nav2'],
-    ['Skills', 'skills', 'nav3'],
-    ['Work', 'work', 'nav4'],
-    ['Contact', 'contact', 'nav5'],
+    ['Home', 'hero', 'nav1', -200],
+    ['About', 'about', 'nav2', -100],
+    ['Skills', 'skills', 'nav3', -100],
+    ['Work', 'work', 'nav4', -100],
+    ['Contact', 'contact', 'nav5', -100],
   ];
-  const navElements = navItems.map(([title, url, key]) => (
+  const navElements = navItems.map(([title, url, key, offset]) => (
     <li key={key}>
       <Link
         spy
@@ -36,7 +36,7 @@ function NavBar() {
         to={url}
         smooth
         duration={500}
-        offset={-200}
+        offset={offset}
         onClick={() => { if (nav) { toggleNav(); } }}
       >
         {title}
