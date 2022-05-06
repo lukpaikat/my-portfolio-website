@@ -54,7 +54,7 @@ function NavBar() {
   };
 
   return (
-    <header className="fixed top-0 left-0 flex justify-between bg-gradient-to-b transition-colors from-soapstone dark:from-county-green w-full">
+    <header className="fixed top-0 left-0 flex justify-between bg-gradient-to-b transition-colors from-soapstone dark:from-county-green-darker w-full">
       <p className="block p-4">
         mhasbisaputra
       </p>
