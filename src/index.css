@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply bg-soapstone dark:bg-county-green;
+    @apply bg-soapstone dark:bg-county-green-darker;
     @apply  text-county-green dark:text-soapstone;
     @apply transition-colors;
   }
