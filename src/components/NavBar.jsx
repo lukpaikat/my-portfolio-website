@@ -28,7 +28,7 @@ function NavBar() {
     <li key={key}>
       <Link
         spy
-        activeClass="after:w-1/5 md:after:w-1/2"
+        activeClass="after:w-12 md:after:w-1/2"
         className="relative z-10 md:text-center min-h-44px min-w-44px w-60 md:w-auto block p-4 md:text-base transition-all
           border-2 border-transparent hover:border-county-green hover:dark:border-soapstone
           after:transition-all after:absolute after:h-0.5 after:dark:bg-soapstone after:bg-county-green
