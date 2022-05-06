@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       colors: {
         'county-green': '#093523',
+        'county-green-darker': '#061e15',
         'bright-red': '#EA0801',
         soapstone: '#FDFDFD',
         salmon: '#F3837F',
