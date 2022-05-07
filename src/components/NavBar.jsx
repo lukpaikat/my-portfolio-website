@@ -28,12 +28,14 @@ function NavBar() {
     <li key={key}>
       <Link
         spy
+        tabIndex={0}
         activeClass="after:!w-1/6 md:after:w-1/2"
         className="relative z-10 md:text-center min-h-44px min-w-44px w-60 md:w-auto block p-4 md:text-base transition-all
           border-2 border-transparent hover:border-county-green hover:dark:border-soapstone
+          focus:border-county-green focus:dark:border-soapstone
           after:transition-all after:absolute after:h-0.5 after:dark:bg-soapstone after:bg-county-green
-          after:bottom-3 after:left-4 md:after:left-1/2 md:after:-translate-x-1/2 hover:after:w-1/6 md:hover:after:w-1/2 after:w-0
-          2xl:text-xl"
+          after:bottom-3 after:left-4 md:after:left-1/2 md:after:-translate-x-1/2 hover:after:w-1/6 focus:after:w-1/6
+          md:hover:after:w-1/2 after:w-0 2xl:text-xl outline-none"
         to={url}
         smooth
         duration={500}
