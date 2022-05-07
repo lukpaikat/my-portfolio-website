@@ -1,9 +1,42 @@
 import React from 'react';
+import myPhoto from '../assets/images/my-photo-grayscale.JPG';
 
 function About() {
   return (
-    <section>
-      <h1>this is About section</h1>
+    <section
+      id="about"
+      className="grid sm:grid-cols-[45%_55%] h-screen sm:max-h-[720px]
+      min-h-[720px] sm:min-h-0 px-4 sm:pl-0"
+    >
+      <div className="flex items-center justify-center relative before:w-full before:h-[90%] sm:before:h-full sm:before:w-10/12 before:top-0 sm:before:left-0 sm:before:top-auto before:border sm:before:border-l-0 before:border-spanish-green before:absolute max-h-[720px]">
+        <img
+          className="h-10/12 w-10/12 relative z-10 mt-4 sm:mt-0
+            sm:w-11/12 sm:h-11/12 max-h-[600px] max-w-[600px] aspect-square object-cover"
+          src={myPhoto}
+          alt="my face"
+        />
+      </div>
+      <article className="flex sm:justify-center flex-col my-4">
+        <h2 className="mb-4 text-7xl 2xl:text-8xl">ABOUT</h2>
+        <div>
+          <p className="mb-4 2xl:text-xl">
+            My name is Muhammad Hasbi Saputra. I’m from Indonesia.
+            I like working with javaScript and other stuff related to front-end development.
+            <small>Therefore I proclaim my self as a front-end developer.</small>
+          </p>
+          <p className="mb-4 2xl:text-xl">
+            Currently I’m working on improving my skills and
+            seeking entry level front-end development job
+          </p>
+        </div>
+        <a
+          href="https://s3-ap-southeast-1.amazonaws.com/glints-dashboard/resume/7bde17d26c513c1379169e0f0161378a.pdf"
+          className="bg-county-green text-soapstone dark:bg-soapstone dark:text-county-green block w-fit
+          min-h-44px min-w-44px py-3 px-4 mr-2 my-2 cursor-pointer 2xl:text-xl"
+        >
+          My resume
+        </a>
+      </article>
     </section>
   );
 }

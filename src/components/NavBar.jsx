@@ -32,7 +32,8 @@ function NavBar() {
         className="relative z-10 md:text-center min-h-44px min-w-44px w-60 md:w-auto block p-4 md:text-base transition-all
           border-2 border-transparent hover:border-county-green hover:dark:border-soapstone
           after:transition-all after:absolute after:h-0.5 after:dark:bg-soapstone after:bg-county-green
-          after:bottom-3 after:left-4 md:after:left-1/2 md:after:-translate-x-1/2 hover:after:w-1/6 md:hover:after:w-1/2 after:w-0"
+          after:bottom-3 after:left-4 md:after:left-1/2 md:after:-translate-x-1/2 hover:after:w-1/6 md:hover:after:w-1/2 after:w-0
+          2xl:text-xl"
         to={url}
         smooth
         duration={500}
@@ -55,7 +56,7 @@ function NavBar() {
 
   return (
     <header className="fixed top-0 left-0 flex justify-between bg-gradient-to-b transition-colors from-soapstone dark:from-county-green-darker w-full">
-      <p className="block p-4">
+      <p className="block p-4 2xl:text-xl">
         mhasbisaputra
       </p>
       <div className="flex flex-shrink-0">
