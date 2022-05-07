@@ -24,7 +24,7 @@ function Skills() {
     </div>
   ));
   return (
-    <section id="skills" className=" px-4 md:h-screen md:max-h-[400px] md:flex md:flex-col md:justify-center">
+    <section id="skills" className=" px-4 md:h-screen md:max-h-[720px] md:flex md:flex-col md:justify-center">
       <h2 className="mb-4 text-7xl 2xl:text-8xl md:text-center">SKILLS</h2>
       <p className="2xl:text-xl md:text-center">These are the technologies I&apos;ve worked with</p>
       <div className="flex flex-wrap w-full justify-start md:justify-center mt-8">
