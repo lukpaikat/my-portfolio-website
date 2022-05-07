@@ -6,7 +6,7 @@ function About() {
     <section
       id="about"
       className="landscape:grid landscape:grid-cols-[45%_55%] landscape:h-screen landscape:max-h-[720px]
-      landscape:min-h-[440px] px-4 landscape:pl-0 mb-14"
+      landscape:min-h-[440px] px-4 landscape:pl-0"
     >
       <div className="flex items-center justify-center relative before:w-full before:h-[90%] landscape:before:h-full landscape:before:w-10/12 before:top-0 landscape:before:left-0 landscape:before:top-auto before:border landscape:before:border-l-0 before:border-spanish-green before:absolute max-h-[720px]">
         <img
