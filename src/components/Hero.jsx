@@ -32,6 +32,7 @@ function Hero() {
           I&apos;m a front-end developer
         </p>
         <Link
+          tabIndex={0}
           to="work"
           smooth
           duration={500}
