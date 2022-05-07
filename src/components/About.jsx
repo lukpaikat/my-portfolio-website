@@ -5,18 +5,18 @@ function About() {
   return (
     <section
       id="about"
-      className="grid sm:grid-cols-[45%_55%] h-screen sm:max-h-[720px]
-      min-h-[720px] sm:min-h-0 px-4 sm:pl-0"
+      className="landscape:grid landscape:grid-cols-[45%_55%] landscape:h-screen landscape:max-h-[720px]
+      landscape:min-h-[440px] px-4 landscape:pl-0"
     >
-      <div className="flex items-center justify-center relative before:w-full before:h-[90%] sm:before:h-full sm:before:w-10/12 before:top-0 sm:before:left-0 sm:before:top-auto before:border sm:before:border-l-0 before:border-spanish-green before:absolute max-h-[720px]">
+      <div className="flex items-center justify-center relative before:w-full before:h-[90%] landscape:before:h-full landscape:before:w-10/12 before:top-0 landscape:before:left-0 landscape:before:top-auto before:border landscape:before:border-l-0 before:border-spanish-green before:absolute max-h-[720px]">
         <img
-          className="h-10/12 w-10/12 relative z-10 mt-4 sm:mt-0
-            sm:w-11/12 sm:h-11/12 max-h-[600px] max-w-[600px] aspect-square object-cover"
+          className="h-10/12 w-10/12 relative z-10 mt-4 landscape:mt-0
+            landscape:w-11/12 landscape:h-11/12 max-h-[600px] max-w-[600px] aspect-square object-cover"
           src={myPhoto}
           alt="my face"
         />
       </div>
-      <article className="flex sm:justify-center flex-col my-4">
+      <article className="flex landscape:justify-center flex-col my-4">
         <h2 className="mb-4 text-7xl 2xl:text-8xl">ABOUT</h2>
         <div>
           <p className="mb-4 2xl:text-xl">
