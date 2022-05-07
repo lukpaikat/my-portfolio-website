@@ -10,8 +10,8 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="mt-16 h-[calc(100vh_-_4rem)] grid
-        grid-cols-[12.5%_auto] md:grid-cols-[25%_auto] grid-rows-[52%_48%]
+      className="h-screen grid
+        grid-cols-[12.5%_auto] md:grid-cols-[25%_auto] grid-rows-[55%_45%]
         min-h-[480px]"
     >
       <div
