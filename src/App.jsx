@@ -6,9 +6,12 @@ import Skills from './components/Skills';
 // tambah skip to content
 function App() {
   return (
-    <div>
+    <>
+      <a className="absolute left-1/2 -translate-y-full focus:translate-y-0 z-20" href="#main">
+        Skip to content
+      </a>
       <NavBar />
-      <main>
+      <main id="main">
         <Hero />
         <About />
         <Skills />
@@ -16,7 +19,7 @@ function App() {
           Hello world!
         </h1>
       </main>
-    </div>
+    </>
   );
 }
 
