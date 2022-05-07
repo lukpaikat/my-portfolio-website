@@ -1,8 +1,10 @@
 import React from 'react';
 import About from './components/About';
+import Contact from './components/Contact';
 import Hero from './components/Hero';
 import NavBar from './components/NavBar';
 import Skills from './components/Skills';
+import Work from './components/Work';
 // tambah skip to content
 function App() {
   return (
@@ -15,9 +17,8 @@ function App() {
         <Hero />
         <About />
         <Skills />
-        <h1 id="work" className="mt-20 text-3xl font-bold underline h-screen">
-          Hello world!
-        </h1>
+        <Work />
+        <Contact />
       </main>
     </>
   );
