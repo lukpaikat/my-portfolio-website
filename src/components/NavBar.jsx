@@ -24,7 +24,7 @@ function NavBar() {
     ['Work', 'work', 'nav4', -100],
     ['Contact', 'contact', 'nav5', -100],
   ];
-  const navElements = navItems.map(([title, url, key, offset]) => (
+  const navElements = navItems.map(([title, id, key, offset]) => (
     <li key={key}>
       <Link
         spy
@@ -36,7 +36,7 @@ function NavBar() {
           after:transition-all after:absolute after:h-0.5 after:dark:bg-soapstone after:bg-county-green
           after:bottom-3 after:left-4 md:after:left-1/2 md:after:-translate-x-1/2 hover:after:w-1/6 focus:after:w-1/6
           md:hover:after:w-1/2 after:w-0 2xl:text-2xl 2xl:p-6 outline-none"
-        to={url}
+        to={id}
         smooth
         duration={500}
         offset={offset}
