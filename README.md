@@ -1,6 +1,7 @@
 # Heavily inspired by this video
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/2kg0z1qNrkw/0.jpg)](https://www.youtube.com/watch?v=2kg0z1qNrkw)
+[![Build a REACT JS Portfolio Website Using Tailwind CSS](https://img.youtube.com/vi/2kg0z1qNrkw/0.jpg)](https://www.youtube.com/watch?v=2kg0z1qNrkw)
+
 Build a REACT JS Portfolio Website Using Tailwind CSS - Get Hired! by Code Commerce
 
 # Getting Started with Create React App
