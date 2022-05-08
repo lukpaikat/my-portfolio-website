@@ -35,7 +35,7 @@ function NavBar() {
           focus:border-county-green focus:dark:border-soapstone
           after:transition-all after:absolute after:h-0.5 after:dark:bg-soapstone after:bg-county-green
           after:bottom-3 after:left-4 md:after:left-1/2 md:after:-translate-x-1/2 hover:after:w-1/6 focus:after:w-1/6
-          md:hover:after:w-1/2 after:w-0 2xl:text-xl outline-none"
+          md:hover:after:w-1/2 after:w-0 2xl:text-2xl 2xl:p-6 outline-none"
         to={url}
         smooth
         duration={500}
@@ -58,23 +58,23 @@ function NavBar() {
 
   return (
     <header className="fixed top-0 left-0 flex justify-between bg-gradient-to-b transition-colors from-soapstone dark:from-county-green-darker w-full z-10">
-      <p className="block p-4 2xl:text-xl">
+      <p className="block p-4 2xl:text-2xl">
         mhasbisaputra
       </p>
       <div className="flex flex-shrink-0">
         <button
           aria-label="toggle dark mode"
           type="button"
-          className="transition-colors min-w-44px min-h-44px hover:bg-county-green dark:hover:bg-soapstone dark:hover:text-county-green hover:text-soapstone"
+          className="transition-colors 2xl:p-6 2xl:w-16 min-w-44px min-h-44px hover:bg-county-green dark:hover:bg-soapstone dark:hover:text-county-green hover:text-soapstone"
           onClick={toggleTheme}
         >
           <div className="relative w-full">
             <Icon
-              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all opacity-100 rotate-0 dark:opacity-0 dark:rotate-180"
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all opacity-100 rotate-0 dark:opacity-0 dark:rotate-180 2xl:w-5 2xl:h-5 2xl"
               icon="clarity:moon-solid"
             />
             <Icon
-              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all opacity-0 rotate-180 dark:opacity-100 dark:rotate-0"
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all opacity-0 rotate-180 dark:opacity-100 dark:rotate-0 2xl:w-5 2xl:h-5"
               icon="clarity:sun-solid"
             />
           </div>
