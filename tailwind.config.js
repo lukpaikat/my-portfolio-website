@@ -20,6 +20,9 @@ module.exports = {
         '44px': '44px',
         '410px': '410px',
       },
+      transitionTimingFunction: {
+        springy: 'cubic-bezier(.49,.31,.67,1.46)',
+      },
     },
   },
   plugins: [],
