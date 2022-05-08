@@ -4,23 +4,24 @@ import { Icon } from '@iconify/react';
 
 function Skills() {
   const iconItems = [
-    ['vscode-icons:file-type-html', 'logoHtml5'],
-    ['vscode-icons:file-type-css', 'logoCss3'],
-    ['logos:javascript', 'logoJavaScript'],
-    ['logos:sass', 'logoSass'],
-    ['logos:react', 'logoReact'],
-    ['logos:tailwindcss-icon', 'logoTailWindCss'],
+    ['vscode-icons:file-type-html', 'logoHtml5', 'HTML5'],
+    ['vscode-icons:file-type-css', 'logoCss3', 'CSS3'],
+    ['logos:javascript', 'logoJavaScript', 'JavaScript'],
+    ['logos:sass', 'logoSass', 'Sass'],
+    ['logos:react', 'logoReact', 'ReactJS'],
+    ['logos:tailwindcss-icon', 'logoTailWindCss', 'Tailwind CSS'],
   ];
-  const iconElements = iconItems.map(([logo, key]) => (
+  const iconElements = iconItems.map(([logo, key, name]) => (
     <div
       key={key}
       className="mx-2 h-24 w-24 lg:h-28 lg:w-28 xl:h-36 xl:w-36 2xl:h-56 2xl:w-56 border my-2
-      border-county-green dark:border-soapstone flex"
+      border-county-green dark:border-soapstone flex flex-col items-center justify-center"
     >
       <Icon
-        className="h-4/6 w-4/6 m-auto"
+        className="h-4/6 w-4/6 m-auto\"
         icon={logo}
       />
+      <p className="text-center mt-2 text-xs 2xl:text-xl">{name}</p>
     </div>
   ));
   return (
