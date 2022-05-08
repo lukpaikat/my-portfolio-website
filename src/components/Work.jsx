@@ -37,7 +37,7 @@ function Work() {
     <section id="work" className="my-16 px-4">
       <h2 className="mb-4 text-5xl xl:text-6xl 2xl:text-8xl 2xl:mb-12 text-center">Work</h2>
       <p className="text-center mb-4 2xl:text-3xl 2xl:mb-8">Check out some of my work</p>
-      <div className="sm:grid sm:grid-cols-2 max-w-7xl xl:grid-cols-3 2xl:max-w-[1850px] mx-auto">
+      <div className="sm:grid sm:grid-cols-2 max-w-7xl 2xl:max-w-[1750px] mx-auto">
         {workElements}
       </div>
     </section>
