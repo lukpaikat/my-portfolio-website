@@ -25,9 +25,9 @@ function Skills() {
     </div>
   ));
   return (
-    <section id="skills" className="mt-16 px-4 md:h-screen md:max-h-[400px] xl:max-h-[600px] md:flex md:flex-col md:justify-center">
+    <section id="skills" className="mt-16 px-4 md:h-screen md:max-h-[400px] xl:max-h-[700px] md:flex md:flex-col md:justify-center">
       <h2 className="mb-4 mx-6 text-5xl xl:text-6xl 2xl:text-8xl 2xl:mb-12 text-center">SKILLS</h2>
-      <p className="2xl:text-3xl mx-6 text-center">These are the technologies I&apos;ve worked with</p>
+      <p className="2xl:text-2xl mx-6 text-center">These are the technologies I&apos;ve worked with</p>
       <div className="flex flex-wrap w-full justify-center mt-8 px-6">
         {iconElements}
       </div>
