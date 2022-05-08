@@ -18,11 +18,11 @@ function NavBar() {
   const toggleNav = () => setNav((prevNav) => !prevNav);
 
   const navItems = [
-    ['Home', 'hero', 'nav1', -200],
-    ['About', 'about', 'nav2', -100],
-    ['Skills', 'skills', 'nav3', -100],
-    ['Work', 'work', 'nav4', -100],
-    ['Contact', 'contact', 'nav5', -100],
+    ['Home', 'hero', 'nav1', -300],
+    ['About', 'about', 'nav2', -300],
+    ['Skills', 'skills', 'nav3', -300],
+    ['Work', 'work', 'nav4', -300],
+    ['Contact', 'contact', 'nav5', -300],
   ];
   const navElements = navItems.map(([title, id, key, offset]) => (
     <li key={key}>
@@ -57,10 +57,10 @@ function NavBar() {
   };
 
   return (
-    <header className="fixed top-0 left-0 flex justify-between bg-gradient-to-b transition-colors from-soapstone dark:from-county-green-darker w-full z-10">
-      <p className="block p-4 2xl:text-2xl">
+    <header className="fixed top-0 left-0 flex justify-between items-center bg-gradient-to-b transition-colors from-soapstone dark:from-county-green-darker w-full z-10">
+      <a className="block p-4 2xl:text-2xl" href="/">
         mhasbisaputra
-      </p>
+      </a>
       <div className="flex flex-shrink-0">
         <button
           aria-label="toggle dark mode"
