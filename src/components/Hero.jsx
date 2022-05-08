@@ -38,7 +38,7 @@ function Hero() {
           duration={500}
           offset={-200}
           className="bg-county-green text-soapstone dark:bg-soapstone dark:text-county-green block w-fit
-            min-h-44px min-w-44px py-3 px-4 mx-2 my-2 cursor-pointer 2xl:text-2xl 2xl:px-8 2xl:py-6 2xl:my-4"
+            min-h-44px min-w-44px py-3 px-4 mx-2 my-4 cursor-pointer 2xl:text-2xl 2xl:px-8 2xl:py-6"
         >
           My Work
         </Link>
