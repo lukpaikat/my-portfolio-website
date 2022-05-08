@@ -14,7 +14,7 @@ function Skills() {
   const iconElements = iconItems.map(([logo, key]) => (
     <div
       key={key}
-      className="mx-2 h-24 w-24 lg:h-28 lg:w-28 xl:h-36 xl:w-36 border my-2
+      className="mx-2 h-24 w-24 lg:h-28 lg:w-28 xl:h-36 xl:w-36 2xl:h-56 2xl:w-56 border my-2
       border-county-green dark:border-soapstone flex"
     >
       <Icon
@@ -24,10 +24,10 @@ function Skills() {
     </div>
   ));
   return (
-    <section id="skills" className=" px-4 md:h-screen md:max-h-[720px] md:flex md:flex-col md:justify-center">
-      <h2 className="mb-4 text-7xl 2xl:text-8xl md:text-center">SKILLS</h2>
-      <p className="2xl:text-xl md:text-center">These are the technologies I&apos;ve worked with</p>
-      <div className="flex flex-wrap w-full justify-start md:justify-center mt-8">
+    <section id="skills" className="mt-16 px-4 md:h-screen md:max-h-[400px] xl:max-h-[600px] md:flex md:flex-col md:justify-center">
+      <h2 className="mb-4 mx-6 text-5xl xl:text-6xl 2xl:text-8xl 2xl:mb-12 text-center">SKILLS</h2>
+      <p className="2xl:text-3xl mx-6 text-center">These are the technologies I&apos;ve worked with</p>
+      <div className="flex flex-wrap w-full justify-center mt-8 px-6">
         {iconElements}
       </div>
     </section>
