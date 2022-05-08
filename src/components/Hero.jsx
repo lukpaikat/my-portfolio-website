@@ -23,12 +23,12 @@ function Hero() {
         border-b border-dashed mt-auto pr-2 border-b-spanish-green"
       >
         <p className="ml-2 text-xl 2xl:text-3xl">Hi, my name is</p>
-        <h1 className="text-4xl 2xl:text-5xl my-4 ml-2">
+        <h1 className="text-4xl 2xl:text-7xl my-4 ml-2 2xl:my-6">
           Muhammad Hasbi Saputra
         </h1>
       </div>
       <div className="col-start-2 col-end-3 row-start-2 row-end-3 flex flex-col">
-        <p className="ml-2 mt-2 text-2xl 2xl:text-3xl">
+        <p className="ml-2 mt-2 text-2xl 2xl:text-3xl 2xl:my-6">
           I&apos;m a front-end developer
         </p>
         <Link
@@ -38,7 +38,7 @@ function Hero() {
           duration={500}
           offset={-200}
           className="bg-county-green text-soapstone dark:bg-soapstone dark:text-county-green block w-fit
-            min-h-44px min-w-44px py-3 px-4 mx-2 my-2 cursor-pointer 2xl:text-xl 2xl:my-4"
+            min-h-44px min-w-44px py-3 px-4 mx-2 my-2 cursor-pointer 2xl:text-2xl 2xl:px-8 2xl:py-6 2xl:my-4"
         >
           My Work
         </Link>
