@@ -11,6 +11,7 @@ module.exports = {
         soapstone: '#FDFDFD',
         salmon: '#F3837F',
         'spanish-green': '#839990',
+        bush: '#0D291F',
       },
       minWidth: {
         '44px': '44px',
