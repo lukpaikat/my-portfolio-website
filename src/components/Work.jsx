@@ -4,7 +4,7 @@ import workImagesData from '../assets/images/work-images';
 
 function Work() {
   const workElements = workImagesData.map(({
-    name, description, image, url,
+    name, description, image, url, codeUrl,
   }) => (
     <article
       key={nanoid()}
@@ -17,7 +17,9 @@ function Work() {
       <div className="flex justify-between pb-8 2xl:mx-4 2xl:pb-16">
         <a
           className="after:transition-all relative block p-4 after:absolute after:h-px after:w-2/5 hover:after:w-3/5 after:bg-county-green dark:after:bg-soapstone after:bottom-2 after:left-1/2 after:-translate-x-1/2 text-center 2xl:text-3xl"
-          href={url}
+          href={codeUrl}
+          target="_blank"
+          rel="noreferrer"
         >
           VIEW CODE
         </a>
@@ -26,6 +28,8 @@ function Work() {
            after:h-px after:w-2/5 hover:after:w-3/5 after:bg-county-green dark:after:bg-soapstone after:bottom-2 after:left-1/2
            after:-translate-x-1/2 text-center 2xl:text-3xl"
           href={url}
+          target="_blank"
+          rel="noreferrer"
         >
           VISIT DEMO
         </a>
