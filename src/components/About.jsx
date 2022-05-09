@@ -46,7 +46,7 @@ function About() {
               Contact me
             </Link>
             <a
-              href="https://s3-ap-southeast-1.amazonaws.com/glints-dashboard/resume/7bde17d26c513c1379169e0f0161378a.pdf"
+              href="https://s3-ap-southeast-1.amazonaws.com/glints-dashboard/resume/d0b4b63c6eb35069feef9c156d007d42.pdf"
               className="text-county-green dark:text-soapstone w-fit
               min-h-44px min-w-44px py-3 px-4 mr-2 my-2 cursor-pointer 2xl:text-2xl 2xl:px-7 2xl:py-6
               border border-county-green dark:border-soapstone"
