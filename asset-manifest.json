@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.22a044bb.css",
-    "main.js": "/static/js/main.ede4b6dc.js",
+    "main.css": "/static/css/main.69010a11.css",
+    "main.js": "/static/js/main.e9d9214a.js",
     "static/js/787.93455dee.chunk.js": "/static/js/787.93455dee.chunk.js",
     "static/media/justweather-lukpaikat.netlify.app_.png": "/static/media/justweather-lukpaikat.netlify.app_.7de00f157a33d34421ae.png",
     "static/media/nyam2-foods.netlify.app_.png": "/static/media/nyam2-foods.netlify.app_.c49d47eccceaa07096f2.png",
@@ -12,12 +12,12 @@
     "static/media/Glints-star-dark.svg": "/static/media/Glints-star-dark.c7a4f8268fdbc1ba86e18b1f6fd3ec69.svg",
     "static/media/Glints-star-light.svg": "/static/media/Glints-star-light.4d09393f6b16bf196f1f7c6ba60571a1.svg",
     "index.html": "/index.html",
-    "main.22a044bb.css.map": "/static/css/main.22a044bb.css.map",
-    "main.ede4b6dc.js.map": "/static/js/main.ede4b6dc.js.map",
+    "main.69010a11.css.map": "/static/css/main.69010a11.css.map",
+    "main.e9d9214a.js.map": "/static/js/main.e9d9214a.js.map",
     "787.93455dee.chunk.js.map": "/static/js/787.93455dee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.22a044bb.css",
-    "static/js/main.ede4b6dc.js"
+    "static/css/main.69010a11.css",
+    "static/js/main.e9d9214a.js"
   ]
 }
