@@ -1,17 +1,23 @@
 import React from 'react';
 import { nanoid } from 'nanoid';
-import workImagesData from '../assets/images/work-images';
+import workData from '../data/workData';
 
 function Work() {
-  const workElements = workImagesData.map(({
-    name, description, image, url, codeUrl,
+  const workElements = workData.map(({
+    name, description, image, imageSmall, url, codeUrl,
   }) => (
     <article
       key={nanoid()}
       className="w-11/12 mx-auto mt-8 mb-12
       bg-soapstone shadow-md dark:bg-bush"
     >
-      <img className="he" src={image} alt={name} />
+      <img
+        className="w-full"
+        src={imageSmall}
+        srcSet={`${imageSmall} 480w, ${image} 800w`}
+        sizes="(max-width: 1024px) 480px, 800px"
+        alt={name}
+      />
       <h3 className="mx-4 mb-5 mt-8 text-xl font-bold 2xl:text-4xl 2xl:mt-16 2xl:mb-10 2xl:mx-8">{name}</h3>
       <p className="mx-4 mt-5 mb-7 2xl:text-2xl 2xl:mx-8 2xl:mb-16">{description}</p>
       <div className="flex justify-between pb-8 2xl:mx-4 2xl:pb-16">
