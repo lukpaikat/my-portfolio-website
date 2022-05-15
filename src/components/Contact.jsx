@@ -1,13 +1,37 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 
 function Contact() {
+  const { ref, inView } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+    fallbackInView: true,
+  });
+
+  const shortenDelayStyle = {
+    '--animate-delay': '0.20s',
+  };
+
   return (
-    <section id="contact">
-      <h2 className="mb-4 mx-6 text-5xl xl:text-6xl 2xl:text-8xl 2xl:mb-12 text-center">Contact</h2>
-      <p className="2xl:text-2xl mx-6 text-center mb-8 2xl:mb-10">
+    <section ref={ref} id="contact" style={shortenDelayStyle}>
+      <h2
+        className={`mb-4 mx-6 text-5xl xl:text-6xl 2xl:text-8xl 2xl:mb-12 text-center
+        ${inView ? 'animate__animated animate__fadeIn' : ''} opacity-0`}
+      >
+        Contact
+      </h2>
+      <p
+        className={`2xl:text-2xl mx-6 text-center mb-8 2xl:mb-10 
+        ${inView ? 'animate__animated animate__fadeIn animate__delay-1s' : ''} opacity-0`}
+      >
         Submit the form below or send me an email - mhasbisaputra5@gmail.com
       </p>
-      <form action="https://formsubmit.co/e53bda67b333f6316d7faf1f85f9aa43" method="POST" className="flex flex-col max-w-[650px] mx-auto 2xl:max-w-[980px] mb-8 2xl:mb-16">
+      <form
+        action="https://formsubmit.co/e53bda67b333f6316d7faf1f85f9aa43"
+        method="POST"
+        className={`flex flex-col max-w-[650px] mx-auto 2xl:max-w-[980px] mb-8 2xl:mb-16
+        ${inView ? 'animate__animated animate__fadeIn animate__delay-2s' : ''} opacity-0`}
+      >
         <label htmlFor="name" className="my-4 mx-6">
           <span className="sr-only">Name</span>
           <input
