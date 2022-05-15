@@ -6,7 +6,7 @@ import myPhotoSmall from '../assets/images/my-photo-grayscale_small.JPG';
 
 function About() {
   const { ref, inView } = useInView({
-    threshold: 0.5,
+    threshold: 0.3,
     triggerOnce: true,
     fallbackInView: true,
   });
