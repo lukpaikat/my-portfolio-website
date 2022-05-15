@@ -4,6 +4,7 @@ import Link from 'react-scroll/modules/components/Link';
 import { Icon } from '@iconify/react';
 import GlintsDarkIcon from '../assets/icons/Glints-star-dark.svg';
 import GlintsLightIcon from '../assets/icons/Glints-star-light.svg';
+import 'animate.css';
 
 function Hero() {
   // hero here 301375
@@ -16,19 +17,21 @@ function Hero() {
     >
       <div
         className="col-start-1 col-end-2 row-span-full
-          border-r border-dashed border-r-spanish-green"
+          border-r border-dashed border-r-spanish-green
+          animate__animated animate__fadeInLeft"
       />
       <div
         className="col-start-2 col-end-3 row-start-1 row-end-2
-        border-b border-dashed mt-auto pr-2 border-b-spanish-green"
+        border-b border-dashed mt-auto pr-2 border-b-spanish-green
+        animate__animated animate__fadeInDown"
       >
-        <p className="ml-2 text-xl 2xl:text-3xl">Hi, my name is</p>
-        <h1 className="text-4xl 2xl:text-7xl my-4 ml-2 2xl:my-6">
+        <p className="ml-2 text-xl 2xl:text-3xl animate__animated animate__fadeIn animate__delay-1s">Hi, my name is</p>
+        <h1 className="text-4xl 2xl:text-7xl my-4 ml-2 2xl:my-6 animate__animated animate__fadeIn animate__delay-1s">
           Muhammad Hasbi Saputra
         </h1>
       </div>
       <div className="col-start-2 col-end-3 row-start-2 row-end-3 flex flex-col">
-        <p className="ml-2 mt-2 text-2xl 2xl:text-3xl 2xl:my-6">
+        <p className="ml-2 mt-2 text-2xl 2xl:text-3xl 2xl:my-6 animate__animated animate__fadeIn animate__delay-2s">
           I&apos;m a front-end developer
         </p>
         <Link
@@ -38,12 +41,13 @@ function Hero() {
           duration={500}
           offset={-200}
           className="bg-county-green text-soapstone dark:bg-soapstone dark:text-county-green block w-fit
-            min-h-44px min-w-44px py-3 px-4 mx-2 my-4 cursor-pointer 2xl:text-2xl 2xl:px-8 2xl:py-6"
+            min-h-44px min-w-44px py-3 px-4 mx-2 my-4 cursor-pointer 2xl:text-2xl 2xl:px-8 2xl:py-6
+            animate__animated animate__fadeIn animate__delay-4s"
         >
           My Work
         </Link>
-        <p className="mt-auto px-2 2xl:text-xl">find me on:</p>
-        <div className="flex justify-start px-2 pb-4">
+        <p className="mt-auto px-2 2xl:text-xl  animate__animated animate__fadeIn animate__delay-3s">find me on:</p>
+        <div className="flex justify-start px-2 pb-4 animate__animated animate__fadeIn animate__delay-3s">
           <a
             href="https://www.linkedin.com/in/muhammad-hasbi-saputra-54b568227"
             target="_blank"
