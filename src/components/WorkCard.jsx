@@ -23,7 +23,7 @@ function WorkCard(props) {
       ref={ref}
       className={`w-11/12 mx-auto mt-8 mb-12
       bg-soapstone shadow-md dark:bg-bush
-      ${inView ? 'animate__animated animate__fadeInUp' : ''}`}
+      ${inView ? 'animate__animated animate__fadeInUp' : ''} opacity-0`}
     >
       <img
         className="w-full"
