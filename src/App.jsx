@@ -6,7 +6,8 @@ import Hero from './components/Hero';
 import NavBar from './components/NavBar';
 import Skills from './components/Skills';
 import Work from './components/Work';
-// tambah skip to content
+import 'animate.css';
+
 function App() {
   return (
     <>
@@ -14,7 +15,7 @@ function App() {
         Skip to content
       </a>
       <NavBar />
-      <main id="main">
+      <main id="main" className="overflow-x-hidden">
         <Hero />
         <About />
         <Skills />
