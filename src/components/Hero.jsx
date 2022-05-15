@@ -4,13 +4,16 @@ import Link from 'react-scroll/modules/components/Link';
 import { Icon } from '@iconify/react';
 import GlintsDarkIcon from '../assets/icons/Glints-star-dark.svg';
 import GlintsLightIcon from '../assets/icons/Glints-star-light.svg';
-import 'animate.css';
 
 function Hero() {
-  // hero here 301375
+  const shortenDelay = {
+    '--animate-delay': '0.75s',
+  };
+
   return (
     <section
       id="hero"
+      style={shortenDelay}
       className="h-screen grid
         grid-cols-[12.5%_auto] md:grid-cols-[25%_auto] grid-rows-[55%_45%]
         min-h-[480px]"
@@ -26,12 +29,12 @@ function Hero() {
         animate__animated animate__fadeInDown"
       >
         <p className="ml-2 text-xl 2xl:text-3xl animate__animated animate__fadeIn animate__delay-1s">Hi, my name is</p>
-        <h1 className="text-4xl 2xl:text-7xl my-4 ml-2 2xl:my-6 animate__animated animate__fadeIn animate__delay-1s">
+        <h1 className="text-4xl 2xl:text-7xl my-4 ml-2 2xl:my-6 animate__animated animate__fadeIn animate__delay-2s">
           Muhammad Hasbi Saputra
         </h1>
       </div>
       <div className="col-start-2 col-end-3 row-start-2 row-end-3 flex flex-col">
-        <p className="ml-2 mt-2 text-2xl 2xl:text-3xl 2xl:my-6 animate__animated animate__fadeIn animate__delay-2s">
+        <p className="ml-2 mt-2 text-2xl 2xl:text-3xl 2xl:my-6 animate__animated animate__fadeIn animate__delay-3s">
           I&apos;m a front-end developer
         </p>
         <Link
@@ -46,8 +49,8 @@ function Hero() {
         >
           My Work
         </Link>
-        <p className="mt-auto px-2 2xl:text-xl  animate__animated animate__fadeIn animate__delay-3s">find me on:</p>
-        <div className="flex justify-start px-2 pb-4 animate__animated animate__fadeIn animate__delay-3s">
+        <p className="mt-auto px-2 2xl:text-xl  animate__animated animate__fadeIn animate__delay-4s">find me on:</p>
+        <div className="flex justify-start px-2 pb-4 animate__animated animate__fadeIn animate__delay-4s">
           <a
             href="https://www.linkedin.com/in/muhammad-hasbi-saputra-54b568227"
             target="_blank"
