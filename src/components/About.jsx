@@ -1,27 +1,38 @@
 import React from 'react';
 import Link from 'react-scroll/modules/components/Link';
+import { useInView } from 'react-intersection-observer';
 import myPhoto from '../assets/images/my-photo-grayscale.JPG';
 import myPhotoSmall from '../assets/images/my-photo-grayscale_small.JPG';
 
 function About() {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+    triggerOnce: true,
+    fallbackInView: true,
+  });
   return (
     <section
       id="about"
+      ref={ref}
       className="landscape:grid landscape:grid-cols-[45%_55%] landscape:h-screen landscape:max-h-[720px]
       landscape:min-h-[440px] px-4 landscape:pl-0 max-w-[1750px]
       mx-auto"
     >
       <div className="flex items-center justify-center relative before:w-full before:max-w-[800px] before:h-[90%] landscape:before:h-full landscape:before:w-10/12 before:top-0 landscape:before:left-0 landscape:before:top-auto before:border before:border-spanish-green before:absolute max-h-[720px]">
         <img
-          className="h-10/12 w-10/12 relative mt-4 landscape:mt-0
-            landscape:w-11/12 landscape:h-11/12 max-h-[600px] max-w-[600px] aspect-square object-cover"
+          className={`h-10/12 w-10/12 relative mt-4 landscape:mt-0
+            landscape:w-11/12 landscape:h-11/12 max-h-[600px] max-w-[600px] aspect-square object-cover
+            ${inView ? 'animate__animated animate__fadeIn' : ''} opacity-0`}
           src={myPhoto}
           srcSet={`${myPhotoSmall} 480w, ${myPhoto} 800w`}
           sizes="(max-width: 600px) 480px, 800px"
           alt="my face"
         />
       </div>
-      <article className="flex landscape:justify-center flex-col my-4 mx-6 xl:max-w-[90%]">
+      <article
+        className={`flex landscape:justify-center flex-col my-4 mx-6 xl:max-w-[90%]
+          ${inView ? 'animate__animated animate__fadeInRight' : ''} opacity-0`}
+      >
         <h2 className="mb-4 text-5xl xl:text-6xl 2xl:text-8xl 2xl:mb-12 text-center landscape:text-left">ABOUT</h2>
         <div className="max-w-lg landscape:max-w-none mx-auto">
           <p className="mb-4 2xl:text-2xl 2xl:mb-8">
