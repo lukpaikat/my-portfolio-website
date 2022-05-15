@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.69010a11.css",
-    "main.js": "/static/js/main.e9d9214a.js",
+    "main.css": "/static/css/main.e0b2eee6.css",
+    "main.js": "/static/js/main.e74a2d53.js",
     "static/js/787.93455dee.chunk.js": "/static/js/787.93455dee.chunk.js",
-    "static/media/justweather-lukpaikat.netlify.app_.png": "/static/media/justweather-lukpaikat.netlify.app_.7de00f157a33d34421ae.png",
-    "static/media/nyam2-foods.netlify.app_.png": "/static/media/nyam2-foods.netlify.app_.c49d47eccceaa07096f2.png",
-    "static/media/bookshelf-lukpaikat.netlify.app_ 720.png": "/static/media/bookshelf-lukpaikat.netlify.app_ 720.41d49b9ac8ba1f065e7d.png",
-    "static/media/my-photo-grayscale.JPG": "/static/media/my-photo-grayscale.2073b45994e00c3d2a41.JPG",
-    "static/media/lukpaikat.github.io_etch-a-sketch_.png": "/static/media/lukpaikat.github.io_etch-a-sketch_.96dfd6026c3ba379ac2c.png",
-    "static/media/lukpaikat.github.io_rock-paper-scissors_.png": "/static/media/lukpaikat.github.io_rock-paper-scissors_.e07e8449b9e1f6b997e9.png",
+    "static/media/justweather-lukpaikat.netlify.app_medium.jpg": "/static/media/justweather-lukpaikat.netlify.app_medium.61877133689bee486ff0.jpg",
+    "static/media/my-photo-grayscale.JPG": "/static/media/my-photo-grayscale.2ff85e1bb34375f4a3df.JPG",
+    "static/media/nyam2-foods.netlify.app_medium.jpg": "/static/media/nyam2-foods.netlify.app_medium.de05f284886a2d4425ed.jpg",
+    "static/media/bookshelf-lukpaikat.netlify.app_medium.jpg": "/static/media/bookshelf-lukpaikat.netlify.app_medium.f63cf4381e65ab45555f.jpg",
+    "static/media/justweather-lukpaikat.netlify.app_small.jpg": "/static/media/justweather-lukpaikat.netlify.app_small.d1913abeab2bfff15f83.jpg",
+    "static/media/my-photo-grayscale_small.JPG": "/static/media/my-photo-grayscale_small.b95eccbe5764863e6280.JPG",
+    "static/media/nyam2-foods.netlify.app_small.jpg": "/static/media/nyam2-foods.netlify.app_small.b65870ae5101954d532a.jpg",
+    "static/media/lukpaikat.github.io_etch-a-sketch_medium.jpg": "/static/media/lukpaikat.github.io_etch-a-sketch_medium.e5b9c373850821ee829e.jpg",
+    "static/media/bookshelf-lukpaikat.netlify.app_small.jpg": "/static/media/bookshelf-lukpaikat.netlify.app_small.d0685f89d892156b79d9.jpg",
     "static/media/Glints-star-dark.svg": "/static/media/Glints-star-dark.c7a4f8268fdbc1ba86e18b1f6fd3ec69.svg",
     "static/media/Glints-star-light.svg": "/static/media/Glints-star-light.4d09393f6b16bf196f1f7c6ba60571a1.svg",
     "index.html": "/index.html",
-    "main.69010a11.css.map": "/static/css/main.69010a11.css.map",
-    "main.e9d9214a.js.map": "/static/js/main.e9d9214a.js.map",
+    "main.e0b2eee6.css.map": "/static/css/main.e0b2eee6.css.map",
+    "main.e74a2d53.js.map": "/static/js/main.e74a2d53.js.map",
     "787.93455dee.chunk.js.map": "/static/js/787.93455dee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.69010a11.css",
-    "static/js/main.e9d9214a.js"
+    "static/css/main.e0b2eee6.css",
+    "static/js/main.e74a2d53.js"
   ]
 }
