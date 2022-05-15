@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'react-scroll/modules/components/Link';
 import myPhoto from '../assets/images/my-photo-grayscale.JPG';
+import myPhotoSmall from '../assets/images/my-photo-grayscale_small.JPG';
 
 function About() {
   return (
@@ -15,6 +16,8 @@ function About() {
           className="h-10/12 w-10/12 relative mt-4 landscape:mt-0
             landscape:w-11/12 landscape:h-11/12 max-h-[600px] max-w-[600px] aspect-square object-cover"
           src={myPhoto}
+          srcSet={`${myPhotoSmall} 480w, ${myPhoto} 800w`}
+          sizes="(max-width: 600px) 480px, 800px"
           alt="my face"
         />
       </div>
