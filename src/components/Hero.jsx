@@ -6,14 +6,14 @@ import GlintsDarkIcon from '../assets/icons/Glints-star-dark.svg';
 import GlintsLightIcon from '../assets/icons/Glints-star-light.svg';
 
 function Hero() {
-  const shortenDelay = {
+  const shortenDelayStyle = {
     '--animate-delay': '0.70s',
   };
 
   return (
     <section
       id="hero"
-      style={shortenDelay}
+      style={shortenDelayStyle}
       className="h-screen grid
         grid-cols-[12.5%_auto] md:grid-cols-[25%_auto] grid-rows-[55%_45%]
         min-h-[480px]"
