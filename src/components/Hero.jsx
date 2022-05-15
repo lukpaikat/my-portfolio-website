@@ -7,7 +7,7 @@ import GlintsLightIcon from '../assets/icons/Glints-star-light.svg';
 
 function Hero() {
   const shortenDelay = {
-    '--animate-delay': '0.75s',
+    '--animate-delay': '0.70s',
   };
 
   return (
@@ -33,8 +33,8 @@ function Hero() {
           Muhammad Hasbi Saputra
         </h1>
       </div>
-      <div className="col-start-2 col-end-3 row-start-2 row-end-3 flex flex-col">
-        <p className="ml-2 mt-2 text-2xl 2xl:text-3xl 2xl:my-6 animate__animated animate__fadeIn animate__delay-3s">
+      <div className="col-start-2 col-end-3 row-start-2 row-end-3 flex flex-col animate__animated animate__fadeIn animate__delay-3s">
+        <p className="ml-2 mt-2 text-2xl 2xl:text-3xl 2xl:my-6">
           I&apos;m a front-end developer
         </p>
         <Link
@@ -44,13 +44,12 @@ function Hero() {
           duration={500}
           offset={-200}
           className="bg-county-green text-soapstone dark:bg-soapstone dark:text-county-green block w-fit
-            min-h-44px min-w-44px py-3 px-4 mx-2 my-4 cursor-pointer 2xl:text-2xl 2xl:px-8 2xl:py-6
-            animate__animated animate__fadeIn animate__delay-4s"
+            min-h-44px min-w-44px py-3 px-4 mx-2 my-4 cursor-pointer 2xl:text-2xl 2xl:px-8 2xl:py-6"
         >
           My Work
         </Link>
-        <p className="mt-auto px-2 2xl:text-xl  animate__animated animate__fadeIn animate__delay-4s">find me on:</p>
-        <div className="flex justify-start px-2 pb-4 animate__animated animate__fadeIn animate__delay-4s">
+        <p className="mt-auto px-2 2xl:text-xl">find me on:</p>
+        <div className="flex justify-start px-2 pb-4">
           <a
             href="https://www.linkedin.com/in/muhammad-hasbi-saputra-54b568227"
             target="_blank"
