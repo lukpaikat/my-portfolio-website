@@ -8,6 +8,8 @@ import rockPaperScissorsImage from './lukpaikat.github.io_rock-paper-scissors_me
 import rockPaperScissorsImageSmall from './lukpaikat.github.io_rock-paper-scissors_small.jpg';
 import nyam2FoodsImage from './nyam2-foods.netlify.app_medium.jpg';
 import nyam2FoodsImageSmall from './nyam2-foods.netlify.app_small.jpg';
+import myPortfolioWebsiteImage from './mhasbisaputra.my.id__medium.jpg';
+import myPortfolioWebsiteImageSmall from './mhasbisaputra.my.id__small.jpg';
 
 const workImages = {
   bookShelf: {
@@ -29,6 +31,10 @@ const workImages = {
   nyam2Foods: {
     medium: nyam2FoodsImage,
     small: nyam2FoodsImageSmall,
+  },
+  myPortfolioWebsite: {
+    medium: myPortfolioWebsiteImage,
+    small: myPortfolioWebsiteImageSmall,
   },
 };
 

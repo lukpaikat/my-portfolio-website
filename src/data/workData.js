@@ -41,6 +41,14 @@ const workData = [
     url: 'https://lukpaikat.github.io/rock-paper-scissors/',
     codeUrl: 'https://github.com/lukpaikat/rock-paper-scissors',
   },
+  {
+    name: 'My portfolio website',
+    description: 'My portfolio website to display my works',
+    image: workImages.myPortfolioWebsite.medium,
+    imageSmall: workImages.myPortfolioWebsite.small,
+    url: 'https://mhasbisaputra.my.id',
+    codeUrl: 'https://github.com/lukpaikat/my-portfolio-website',
+  },
 ];
 
 export default workData;
