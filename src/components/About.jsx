@@ -3,6 +3,7 @@ import Link from 'react-scroll/modules/components/Link';
 import { useInView } from 'react-intersection-observer';
 import myPhoto from '../assets/images/my-photo-grayscale.JPG';
 import myPhotoSmall from '../assets/images/my-photo-grayscale_small.JPG';
+import myResume from '../assets/document/resume-mhasbisaputra-juli2022.pdf';
 
 function About() {
   const { ref, inView } = useInView({
@@ -60,7 +61,7 @@ function About() {
               Contact me
             </Link>
             <a
-              href="https://s3-ap-southeast-1.amazonaws.com/glints-dashboard/resume/d0b4b63c6eb35069feef9c156d007d42.pdf"
+              href={myResume}
               className="text-county-green dark:text-soapstone w-fit
               min-h-44px min-w-44px py-3 px-4 mr-2 my-2 cursor-pointer 2xl:text-2xl 2xl:px-7 2xl:py-6
               border border-county-green dark:border-soapstone"
