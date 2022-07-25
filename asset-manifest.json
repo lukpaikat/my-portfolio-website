@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.e0b2eee6.css",
-    "main.js": "/static/js/main.7dbbe054.js",
+    "main.js": "/static/js/main.e50533a9.js",
     "static/js/787.93455dee.chunk.js": "/static/js/787.93455dee.chunk.js",
+    "static/media/resume-mhasbisaputra-juli2022.pdf": "/static/media/resume-mhasbisaputra-juli2022.0ff91dc4ac62ff7e0778.pdf",
     "static/media/justweather-lukpaikat.netlify.app_medium.jpg": "/static/media/justweather-lukpaikat.netlify.app_medium.61877133689bee486ff0.jpg",
     "static/media/my-photo-grayscale.JPG": "/static/media/my-photo-grayscale.2ff85e1bb34375f4a3df.JPG",
     "static/media/nyam2-foods.netlify.app_medium.jpg": "/static/media/nyam2-foods.netlify.app_medium.de05f284886a2d4425ed.jpg",
@@ -17,11 +18,11 @@
     "static/media/Glints-star-light.svg": "/static/media/Glints-star-light.4d09393f6b16bf196f1f7c6ba60571a1.svg",
     "index.html": "/index.html",
     "main.e0b2eee6.css.map": "/static/css/main.e0b2eee6.css.map",
-    "main.7dbbe054.js.map": "/static/js/main.7dbbe054.js.map",
+    "main.e50533a9.js.map": "/static/js/main.e50533a9.js.map",
     "787.93455dee.chunk.js.map": "/static/js/787.93455dee.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e0b2eee6.css",
-    "static/js/main.7dbbe054.js"
+    "static/js/main.e50533a9.js"
   ]
 }
