@@ -2,6 +2,14 @@ import workImages from '../assets/images/work-images';
 
 const workData = [
   {
+    name: 'Catatan Pelupa',
+    description: 'A simple note taking app. Made with reactjs',
+    image: workImages.catatanPelupa.medium,
+    imageSmall: workImages.catatanPelupa.small,
+    url: 'https://catatan-pelupa-lukpaikat.netlify.app/',
+    codeUrl: 'https://gitfront.io/r/lukpaikat/aYWy32Bkf2uJ/catatan-pelupa/',
+  },
+  {
     name: 'Nyam2Foods',
     description: 'A dummy restaurant catalogue',
     image: workImages.nyam2Foods.medium,

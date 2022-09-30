@@ -10,11 +10,17 @@ import nyam2FoodsImage from './nyam2-foods.netlify.app_medium.jpg';
 import nyam2FoodsImageSmall from './nyam2-foods.netlify.app_small.jpg';
 import myPortfolioWebsiteImage from './mhasbisaputra.my.id__medium.jpg';
 import myPortfolioWebsiteImageSmall from './mhasbisaputra.my.id__small.jpg';
+import catatanPelupaImage from './catatan-pelupa_medium.jpg';
+import catatanPelupaImageSmall from './catatan-pelupa_small.jpg';
 
 const workImages = {
   bookShelf: {
     medium: bookShelfImage,
     small: bookShelfImageSmall,
+  },
+  catatanPelupa: {
+    medium: catatanPelupaImage,
+    small: catatanPelupaImageSmall,
   },
   justWeather: {
     medium: justWeatherImage,
