@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e0b2eee6.css",
-    "main.js": "/static/js/main.e50533a9.js",
+    "main.js": "/static/js/main.02491a69.js",
     "static/js/787.93455dee.chunk.js": "/static/js/787.93455dee.chunk.js",
     "static/media/resume-mhasbisaputra-juli2022.pdf": "/static/media/resume-mhasbisaputra-juli2022.0ff91dc4ac62ff7e0778.pdf",
     "static/media/justweather-lukpaikat.netlify.app_medium.jpg": "/static/media/justweather-lukpaikat.netlify.app_medium.61877133689bee486ff0.jpg",
@@ -9,20 +9,22 @@
     "static/media/nyam2-foods.netlify.app_medium.jpg": "/static/media/nyam2-foods.netlify.app_medium.de05f284886a2d4425ed.jpg",
     "static/media/bookshelf-lukpaikat.netlify.app_medium.jpg": "/static/media/bookshelf-lukpaikat.netlify.app_medium.f63cf4381e65ab45555f.jpg",
     "static/media/justweather-lukpaikat.netlify.app_small.jpg": "/static/media/justweather-lukpaikat.netlify.app_small.d1913abeab2bfff15f83.jpg",
+    "static/media/catatan-pelupa_medium.jpg": "/static/media/catatan-pelupa_medium.34ad7c96bec85a252734.jpg",
     "static/media/my-photo-grayscale_small.JPG": "/static/media/my-photo-grayscale_small.b95eccbe5764863e6280.JPG",
     "static/media/nyam2-foods.netlify.app_small.jpg": "/static/media/nyam2-foods.netlify.app_small.b65870ae5101954d532a.jpg",
     "static/media/mhasbisaputra.my.id__medium.jpg": "/static/media/mhasbisaputra.my.id__medium.b2d4adec0b7197de0d08.jpg",
     "static/media/lukpaikat.github.io_etch-a-sketch_medium.jpg": "/static/media/lukpaikat.github.io_etch-a-sketch_medium.e5b9c373850821ee829e.jpg",
     "static/media/bookshelf-lukpaikat.netlify.app_small.jpg": "/static/media/bookshelf-lukpaikat.netlify.app_small.d0685f89d892156b79d9.jpg",
+    "static/media/catatan-pelupa_small.jpg": "/static/media/catatan-pelupa_small.c6b20b4663b8fac38dae.jpg",
     "static/media/Glints-star-dark.svg": "/static/media/Glints-star-dark.c7a4f8268fdbc1ba86e18b1f6fd3ec69.svg",
     "static/media/Glints-star-light.svg": "/static/media/Glints-star-light.4d09393f6b16bf196f1f7c6ba60571a1.svg",
     "index.html": "/index.html",
     "main.e0b2eee6.css.map": "/static/css/main.e0b2eee6.css.map",
-    "main.e50533a9.js.map": "/static/js/main.e50533a9.js.map",
+    "main.02491a69.js.map": "/static/js/main.02491a69.js.map",
     "787.93455dee.chunk.js.map": "/static/js/787.93455dee.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e0b2eee6.css",
-    "static/js/main.e50533a9.js"
+    "static/js/main.02491a69.js"
   ]
 }
