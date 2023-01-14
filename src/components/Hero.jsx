@@ -51,7 +51,7 @@ function Hero() {
         <p className="mt-auto px-2 2xl:text-xl">find me on:</p>
         <div className="flex justify-start px-2 pb-4">
           <a
-            href="https://www.linkedin.com/in/muhammad-hasbi-saputra-54b568227"
+            href="https://www.linkedin.com/in/muhammad-hasbi-saputra/"
             target="_blank"
             rel="noreferrer"
             className="block"

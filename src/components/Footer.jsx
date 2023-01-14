@@ -10,7 +10,7 @@ function Footer() {
       <p className="text-center text-soapstone 2xl:text-2xl">Copyright © 2022 Muhammad Hasbi Saputra</p>
       <div>
         <a
-          href="https://www.linkedin.com/in/muhammad-hasbi-saputra-54b568227"
+          href="https://www.linkedin.com/in/muhammad-hasbi-saputra/"
           target="_blank"
           rel="noreferrer"
           className="inline-block align-middle p-2"
