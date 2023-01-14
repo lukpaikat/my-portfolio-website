@@ -3,7 +3,7 @@ import Link from 'react-scroll/modules/components/Link';
 import { useInView } from 'react-intersection-observer';
 import myPhoto from '../assets/images/my-photo-grayscale.JPG';
 import myPhotoSmall from '../assets/images/my-photo-grayscale_small.JPG';
-import myResume from '../assets/document/resume-mhasbisaputra-juli2022.pdf';
+import myResume from '../assets/document/Resume-1-2023.pdf';
 
 function About() {
   const { ref, inView } = useInView({
